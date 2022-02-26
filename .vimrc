@@ -51,6 +51,11 @@ set guioptions-=R
 set guioptions-=m
 set guioptions-=T
 
+" Make vsplit put the new buffer on the right of the current buffer
+set splitright
+" Make split put the new buffer below the current buffer
+set splitbelow
+
 
 
 
@@ -150,7 +155,7 @@ autocmd FileType c let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf_c.p
 autocmd FileType cpp let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf_cpp.py'
 " 打开python文件时, 自动运行脚本的快捷键.
 autocmd FileType python nnoremap <Leader><F5> :! ~/anaconda3/bin/python % <CR>
- 
+
 
 
 
